@@ -1,7 +1,8 @@
 #!/bin/bash
 read -p "enter the user name " user
 pat='^[A-Za-z]{3,}$' 
-if [[ $user =~ $pat ]]
+pat1='[a-zA-Z]{3,}$'
+if [[ $user =~ $pat1 ]]
 then
 echo "vaild"
 else
