@@ -4,7 +4,8 @@ pat='^[A-Za-z]{3,}$'
 pat1='[a-zA-Z]{3,}$'
 #for email id verification
 pat2='^[a-zA-Z0-9]+([.\-+]?[a-zA-Z0-9]+)*[@][a-z]{2,5}[.]?[a-z]{2,3}([.][a-z]{2})*$'
-if [[ $user =~ $pat2 ]]
+number='^(91[ ])*[0-9]{10}$'
+if [[ $user =~ $number ]]
 then
 echo "vaild"
 else
