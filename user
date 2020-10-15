@@ -5,7 +5,8 @@ pat1='[a-zA-Z]{3,}$'
 #for email id verification
 pat2='^[a-zA-Z0-9]+([.\-+]?[a-zA-Z0-9]+)*[@][a-z]{2,5}[.]?[a-z]{2,3}([.][a-z]{2})*$'
 number='^(91[ ])*[0-9]{10}$'
-if [[ $user =~ $number ]]
+password='^[a-zA-Z]{8,}$'
+if [[ $user =~ $password ]]
 then
 echo "vaild"
 else
