@@ -3,7 +3,7 @@ read -p "enter the user name " user
 pat='^[A-Za-z]{3,}$' 
 pat1='[a-zA-Z]{3,}$'
 #for email id verification
-pat2='^[a-zA-Z0-9]+([.\-+]?[a-zA-Z0-9]+)*[@]?[a-z]{2,5}[.]?[a-z]{2,3}([.]?[a-z]{2})*$'
+pat2='^[a-zA-Z0-9]+([.\-+]?[a-zA-Z0-9]+)*[@][a-z]{2,5}[.]?[a-z]{2,3}([.][a-z]{2})*$'
 if [[ $user =~ $pat2 ]]
 then
 echo "vaild"
