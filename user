@@ -7,7 +7,8 @@ pat2='^[a-zA-Z0-9]+([.\-+]?[a-zA-Z0-9]+)*[@][a-z]{2,5}[.]?[a-z]{2,3}([.][a-z]{2}
 number='^(91[ ])*[0-9]{10}$'
 password='^[a-zA-Z]{8,}$'
 pat6='^[A-Z]{1,}[a-zA-Z]{7,}$'
-if [[ $user =~ $pat6 ]]
+pat7='^[A-Z]{1,}[a-zA-Z]{7,}[0-9]{1,}$'
+if [[ $user =~ $pat7 ]]
 then
 echo "vaild"
 else
